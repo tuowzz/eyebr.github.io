@@ -8,20 +8,17 @@
   <meta name="keywords" content="แปรงรองพื้น, แปรงแต่งหน้า, M-BLITHE, เกลี่ยรองพื้น, ขนนุ่ม, ขนแน่น, ส่งฟรี, เก็บเงินปลายทาง">
   <link rel="canonical" href="https://tuowzz.github.io/mbshopz.github.io/brush" />
 
-  <!-- Open Graph -->
   <meta property="og:title" content="ซื้อแปรงรองพื้น M-BLITHE ขนแน่นนุ่ม เกลี่ยเนียน ไม่กินรองพื้น ส่งฟรี เก็บเงินปลายทาง" />
   <meta property="og:description" content="แปรงรองพื้น M-BLITHE ขนแน่น นุ่ม เกลี่ยง่าย ไม่กินรองพื้น รีวิวจริงหลายพัน ส่งฟรี เก็บเงินปลายทาง #แปรงรองพื้น #mblithe" />
   <meta property="og:image" content="https://tuowzz.github.io/mbshopz.github.io/brush_photo.jpg" />
   <meta property="og:url" content="https://tuowzz.github.io/mbshopz.github.io/brush" />
   <meta property="og:type" content="product" />
 
-  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="ซื้อแปรงรองพื้น M-BLITHE ขนแน่นนุ่ม เกลี่ยเนียน ไม่กินรองพื้น ส่งฟรี เก็บเงินปลายทาง">
   <meta name="twitter:description" content="แปรงรองพื้น M-BLITHE ขนแน่น นุ่ม เกลี่ยง่าย ไม่กินรองพื้น รีวิวจริงหลายพัน ส่งฟรี เก็บเงินปลายทาง">
   <meta name="twitter:image" content="https://tuowzz.github.io/mbshopz.github.io/brush_photo.jpg">
 
-  <!-- Structured Data (Product) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org/",
@@ -45,7 +42,22 @@
   }
   </script>
 
-  <!-- Pixel/Analytics, CSS เดิม, ... คงไว้ทั้งหมด -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'YOUR_PIXEL_ID_HERE'); // <-- แก้ไข PIXEL ID ของคุณที่นี่
+    fbq('track', 'PageView');
+    fbq('track', 'ViewContent'); // ติดตามการดูเนื้อหา (สินค้า)
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID_HERE&ev=PageView&noscript=1"
+  /></noscript>
   <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <style>
@@ -291,8 +303,7 @@
     <div class="product-title">✨ M-BLITHE แปรงรองพื้น ขนแน่น นุ่ม เกลี่ยง่าย ไม่กินรองพื้น</div>
     <div style="color:#ee4d2d;font-size:1.06rem;margin:6px 0 11px 0;">
       ★ 4.9/5 | 8,000 รีวิว
-      <!-- วิดีโอรีวิวลูกค้า Shopee (เล่นอัตโนมัติ ไม่มีเสียง วนลูป) -->
-<div style="margin:0 0 16px 0;text-align:center;">
+      <div style="margin:0 0 16px 0;text-align:center;">
   <video autoplay muted loop playsinline style="max-width:320px;width:100%;border-radius:13px;box-shadow:0 2px 10px 0 rgba(0,0,0,0.10);margin-top:6px;">
     <source src="SaveTik.co_7444733809733537031.mp4" type="video/mp4">
     ไม่สามารถเล่นวิดีโอนี้ได้
@@ -392,7 +403,6 @@
 </div>
 
 
-  <!-- Footer Bar -->
   <footer class="sticky-footer">
     <a href="https://lin.ee/wKelfsp" target="_blank" class="btn-add-line" id="addLineBtnFooter">
       <i class="fa-brands fa-line"></i> แอดไลน์รับโปร
@@ -400,7 +410,6 @@
     <button class="buy-now-tiktok" id="buyNowBtn">ซื้อเลย</button>
   </footer>
 
-  <!-- MODAL ตะกร้า -->
   <div class="modal-overlay" id="buyNowModal">
     <div class="modal-content">
       <i class="fas fa-times close-btn" id="closeModalBtn"></i>
@@ -424,7 +433,6 @@
     </div>
   </div>
 
-  <!-- Popup Success -->
   <div id="successPopup">
     <i class="fas fa-check-circle"></i>
     <p>สั่งซื้อสำเร็จ!</p>
@@ -450,6 +458,7 @@
     });
     // LINE Button Tracking (Header + Footer)
     function lineTrackingHandler() {
+      // --- PIXEL ---
       if(window.fbq) fbq('track', 'Contact');
       if(window.ttq) ttq.track('Contact');
     }
@@ -458,6 +467,7 @@
     });
     // InitiateCheckout Tracking
     function trackInitiateCheckout() {
+      // --- PIXEL ---
       if(window.fbq) fbq('track', 'InitiateCheckout');
       if(window.ttq) ttq.track('InitiateCheckout');
     }
@@ -483,6 +493,7 @@
         submitButton.disabled = false;
         submitButton.textContent = originalButtonText;
         if (data.result === 'success') {
+          // --- PIXEL: PURCHASE EVENT ---
           if(window.fbq) fbq('track', 'Purchase', {value: 199.00, currency: 'THB'});
           if(window.ttq) ttq.track('CompletePayment');
           if(window.gtag) {
