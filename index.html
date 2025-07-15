@@ -71,35 +71,34 @@
 
   <!-- TikTok Pixel -->
   <script>
-  !function (w, d, t) {
-    w.TiktokAnalyticsObject = t;
-    var ttq = w[t] = w[t] || [];
-    ttq.methods = ["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie"];
-    ttq.setAndDefer = function (t, e) { t[e] = function () { t.push([e].concat(Array.prototype.slice.call(arguments, 0))) } };
-    for (var i = 0; i < ttq.methods.length; i++) { ttq.setAndDefer(ttq, ttq.methods[i]) }
-    ttq.instance = function (t) { for (var e = ttq._i[t] || [], n = 0; n < ttq.methods.length; n++) { ttq.setAndDefer(e, ttq.methods[n]) } return e };
-    ttq.load = function (e, n) {
-      var i = "https://analytics.tiktok.com/i18n/pixel/events.js";
-      ttq._i = ttq._i || {};
-      ttq._i[e] = [];
-      ttq._i[e]._u = i;
-      ttq._t = ttq._t || {};
-      ttq._t[e] = +new Date;
-      ttq._o = ttq._o || {};
-      ttq._o[e] = n || {};
-      var o = document.createElement("script");
-      o.type = "text/javascript";
-      o.async = !0;
-      o.src = i + "?sdkid=" + e + "&lib=" + t;
-      var a = document.getElementsByTagName("script")[0];
-      a.parentNode.insertBefore(o, a)
-    };
-    ttq.load('D0EVS2JC77U9C23772EG');
-    ttq.page();
-  }(window, document, 'ttq');
+    !function (w, d, t) {
+      w.TiktokAnalyticsObject = t;
+      var ttq = w[t] = w[t] || [];
+      ttq.methods = ["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie"];
+      ttq.setAndDefer = function (t, e) { t[e] = function () { t.push([e].concat(Array.prototype.slice.call(arguments, 0))) } };
+      for (var i = 0; i < ttq.methods.length; i++) { ttq.setAndDefer(ttq, ttq.methods[i]) }
+      ttq.instance = function (t) { for (var e = ttq._i[t] || [], n = 0; n < ttq.methods.length; n++) { ttq.setAndDefer(e, ttq.methods[n]) } return e };
+      ttq.load = function (e, n) {
+        var i = "https://analytics.tiktok.com/i18n/pixel/events.js";
+        ttq._i = ttq._i || {};
+        ttq._i[e] = [];
+        ttq._i[e]._u = i;
+        ttq._t = ttq._t || {};
+        ttq._t[e] = +new Date;
+        ttq._o = ttq._o || {};
+        ttq._o[e] = n || {};
+        var o = document.createElement("script");
+        o.type = "text/javascript";
+        o.async = !0;
+        o.src = i + "?sdkid=" + e + "&lib=" + t;
+        var a = document.getElementsByTagName("script")[0];
+        a.parentNode.insertBefore(o, a)
+      };
+      ttq.load('D0EVS2JC77U9C23772EG');
+      ttq.page();
+    }(window, document, 'ttq');
   </script>
 
-  <!-- Font & Icon -->
   <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <style>
@@ -313,99 +312,263 @@
 </head>
 <body>
 
-<!-- (เนื้อหา body ทั้งหมดเหมือนเดิม: สินค้า รูป รีวิว ฟอร์ม ปุ่ม ทุกอย่าง) -->
-<!-- (ขออนุญาตย่อเพื่อความกระชับ หากต้องการเต็ม 100% ก็ copy จากโค้ดคุณที่เคยส่งมาได้เลย) -->
+  <header>
+    <h1 style="font-size:1.25rem;line-height:1.4em;color:#ee4d2d;padding:14px 14px 2px 14px;text-align:center;">
+      <span class="shopee-label">ขายดี</span>
+      <span class="shopee-label green">ส่งฟรี</span>
+      <span class="shopee-label yellow">พร้อมส่ง</span>
+      <span class="shopee-label black">เก็บเงินปลายทาง</span><br>
+      แปรงรองพื้น <span style="font-weight:700;">M-BLITHE</span> ขนแน่นนุ่ม เกลี่ยเนียน ไม่กินรองพื้น
+    </h1>
+  </header>
 
-<!-- ที่สำคัญคือ ส่วนของ JavaScript tracking ด้านล่างนี้: -->
-<script>
-  const GOOGLE_SHEET_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbxvkT44c1V26IyzQW_4FhR4iQ0gmrNvdhF5TnneqNZ-21JXFczyZBo-8EFzhA69WshT/exec';
+  <div class="trust-banner">
+    ✅ ของแท้ 100% | เก็บเงินปลายทาง | รีวิวลูกค้าหลายพัน | เหมาะกับทุกสภาพผิว
+  </div>
 
-  // TikTok ViewContent
-  if (window.ttq) ttq.track('ViewContent');
+  <div class="product-gallery">
+    <img src="brush_photo.jpg" alt="แปรงรองพื้น M-BLITHE ขนแน่นนุ่ม เกลี่ยง่าย ไม่กินรองพื้น">
+  </div>
 
-  // Modal variables
-  const buyNowModal = document.getElementById('buyNowModal');
-  const closeModalBtn = document.getElementById('closeModalBtn');
-  const buyNowBtn = document.getElementById('buyNowBtn');
+  <section style="padding:10px 17px;">
+    <p style="color:#999;font-size:0.96rem;margin:5px 0;">
+      #แปรงรองพื้น #foundationbrush #mblithe #แปรงแต่งหน้า #ขนนุ่ม #ส่งฟรี #เก็บเงินปลายทาง
+    </p>
+  </section>
 
-  // Modal control
-  function openModal() { 
-    buyNowModal.style.display = 'flex';
-    trackInitiateCheckout();
-  }
-  function closeModal() { buyNowModal.style.display = 'none'; }
-  buyNowBtn.addEventListener('click', openModal);
-  closeModalBtn.addEventListener('click', closeModal);
-  buyNowModal.addEventListener('click', (event) => {
-    if (event.target === buyNowModal) { closeModal(); }
-  });
+  <div class="content-padding">
+    <div class="price-section">
+      <span class="current-price">฿199</span>
+      <span class="original-price">฿299</span>
+    </div>
+    <div class="product-title">✨ M-BLITHE แปรงรองพื้น ขนแน่น นุ่ม เกลี่ยง่าย ไม่กินรองพื้น</div>
+    <div style="color:#ee4d2d;font-size:1.06rem;margin:6px 0 11px 0;">
+      ★ 4.9/5 | 8,000 รีวิว
+      <div style="margin:0 0 16px 0;text-align:center;">
+  <video autoplay muted loop playsinline style="max-width:320px;width:100%;border-radius:13px;box-shadow:0 2px 10px 0 rgba(0,0,0,0.10);margin-top:6px;">
+    <source src="SaveTik.co_7444733809733537031.mp4" type="video/mp4">
+    ไม่สามารถเล่นวิดีโอนี้ได้
+  </video>
+  <div style="font-size:0.93rem;color:#888;margin-top:2px;">
+    ตัวอย่างรีวิวจากลูกค้าจริง Shopee
+  </div>
+</div>
+    </div>
+    <div class="scarcity-box">
+      🎉 <b>โปรพิเศษ! เหลือ 15 ชิ้น</b> | ส่งฟรีวันนี้เท่านั้น
+    </div>
+  </div>
 
-  // LINE Button Tracking (Header + Footer)
-  function lineTrackingHandler() {
-    if(window.fbq) fbq('track', 'Contact');
-    if(window.ttq) ttq.track('Contact');
-  }
-  document.querySelectorAll('#addLineBtn, #addLineBtnFooter').forEach(el => {
-    if(el) el.addEventListener('click', lineTrackingHandler);
-  });
+  <div class="content-padding shop-info" style="border-radius:12px;">
+    <div class="avatar">MB</div>
+    <div>
+      <div class="shop-name">M-BLITHE Official</div>
+      <a href="https://lin.ee/wKelfsp" target="_blank" class="btn-add-line" id="addLineBtn">
+        <i class="fa-brands fa-line"></i> สอบถาม-รับโปรผ่าน LINE
+      </a>
+    </div>
+  </div>
 
-  // InitiateCheckout Tracking
-  function trackInitiateCheckout() {
-    if(window.fbq) fbq('track', 'InitiateCheckout');
-    if(window.ttq) ttq.track('InitiateCheckout');
-  }
+  <div class="content-padding guarantee-box">
+    🏅 รับประกันคุณภาพ ขนไม่ร่วง ขนนุ่มแน่น ไม่บาดผิว
+  </div>
 
-  // Form submit
-  function sendOrderToSheet(event) {
-    event.preventDefault();
-    const orderForm = document.getElementById('orderForm');
-    const submitButton = document.getElementById('submitBtn');
-    const originalButtonText = submitButton.textContent;
-    submitButton.disabled = true;
-    submitButton.textContent = 'กำลังส่งข้อมูล...';
-    const formData = new FormData(orderForm);
-    const phoneField = orderForm.querySelector('#phone');
-    if (phoneField && phoneField.value && !phoneField.value.startsWith("'")) {
-      formData.set('phone', "'" + phoneField.value);
+  <div class="content-padding steps-box">
+    <b>สั่งซื้อแปรงรองพื้นใน 2 ขั้นตอน</b><br>
+    1. กรอกข้อมูลจัดส่ง<br>
+    2. รอเจ้าหน้าที่ติดต่อยืนยัน
+  </div>
+
+  <div class="content-padding product-details">
+    <h2 style="font-size:1.09rem;font-weight:600;margin-bottom:11px;">
+      <i class="fa-solid fa-circle-info"></i> รายละเอียดสินค้า แปรงรองพื้น M-BLITHE
+    </h2>
+    <div class="feature-item"><span class="icon">✅</span>ขนแปรงนุ่ม แน่น ไม่บาดผิว</div>
+    <div class="feature-item"><span class="icon">🪞</span>เกลี่ยรองพื้นเนียน กลืนผิว ไม่เป็นเส้น</div>
+    <div class="feature-item"><span class="icon">💧</span>ไม่กินรองพื้น ประหยัดเครื่องสำอาง</div>
+    <div class="feature-item"><span class="icon">🌱</span>ดูแลรักษาง่าย ล้างทำความสะอาดได้</div>
+    <div style="color:#999;font-size:0.9rem;">* ผลลัพธ์แตกต่างกันแต่ละบุคคล</div>
+  </div>
+
+  <div class="content-padding reviews-section">
+  <h3><i class="fa-solid fa-comments"></i> รีวิวจากลูกค้าจริง (Shopee)</h3>
+
+  <div class="review">
+    <div class="review-header">
+      <span class="stars">⭐⭐⭐⭐⭐</span>
+      <span class="author">ค** ร**ม**น 🥰**</span>
+    </div>
+    <p class="review-text">
+      ตรงปกค่ะส่งไวแพคสินค้ามาอย่างดีครบจำนวนสอง อันซื้อสองถูกกว่าเยอะค่ะของใช้ดูละจึ้งมากค่ะ แม่อย่างที่แม่ค้าริวิวเลยค่ะมาใช้กับแป้งพัฟค่ะเกลี่ยหน้าคือนุ่มดีค่ะ
+    </p>
+    <div style="display: flex; gap: 7px; flex-wrap: wrap;">
+      <img src="photo_1_2025-06-30_20-06-15.jpg" style="width: 90px; border-radius: 7px;">
+      <img src="photo_3_2025-06-30_20-06-15.jpg" style="width: 90px; border-radius: 7px;">
+      <img src="photo_4_2025-06-30_20-06-15.jpg" style="width: 90px; border-radius: 7px;">
+      <img src="photo_5_2025-06-30_20-06-15.jpg" style="width: 90px; border-radius: 7px;">
+      <img src="photo_6_2025-06-30_20-06-15.jpg" style="width: 90px; border-radius: 7px;">
+    </div>
+    <div style="color:#aaa;font-size:0.92rem;margin-top:6px;">รีวิววันที่ 2024-12-01</div>
+  </div>
+
+  <div class="review">
+    <div class="review-header">
+      <span class="stars">⭐⭐⭐⭐⭐</span>
+      <span class="author">a**e k**w</span>
+    </div>
+    <p class="review-text">
+      ใช้ดีค่ะ สินค้าส่งเร็ว แพ็คมาดีไม่มีปัญหา ราคาถูก จับต้องได้ชอบมากค่ะ 👍👍👍
+    </p>
+    <div style="display: flex; gap: 7px; flex-wrap: wrap;">
+      <img src="photo_4_2025-06-30_20-06-15.jpg" style="width: 90px; border-radius: 7px;">
+      <img src="photo_3_2025-06-30_20-06-15.jpg" style="width: 90px; border-radius: 7px;">
+      <img src="photo_5_2025-06-30_20-06-15.jpg" style="width: 90px; border-radius: 7px;">
+    </div>
+    <div style="color:#aaa;font-size:0.92rem;margin-top:6px;">รีวิววันที่ 2024-12-23</div>
+  </div>
+
+  <div class="review">
+    <div class="review-header">
+      <span class="stars">⭐⭐⭐⭐⭐</span>
+      <span class="author">P**k</span>
+    </div>
+    <p class="review-text">
+      ใช้ดี ดีไซน์สวย แปรงขนนุ่มมาก ไม่บาดผิว ทารองพื้นได้เนียนไม่เป็นเส้น ขนแปรงแน่นไม่มีร่วง คุณภาพสมราคา
+    </p>
+    <div style="display: flex; gap: 7px; flex-wrap: wrap;">
+      <img src="photo_1_2025-06-30_20-06-15.jpg" style="width: 90px; border-radius: 7px;">
+      <img src="photo_5_2025-06-30_20-06-15.jpg" style="width: 90px; border-radius: 7px;">
+    </div>
+    <div style="color:#aaa;font-size:0.92rem;margin-top:6px;">รีวิววันที่ 2024-08-24</div>
+  </div>
+</div>
+
+  <footer class="sticky-footer">
+    <a href="https://lin.ee/wKelfsp" target="_blank" class="btn-add-line" id="addLineBtnFooter">
+      <i class="fa-brands fa-line"></i> แอดไลน์รับโปร
+    </a>
+    <button class="buy-now-tiktok" id="buyNowBtn">ซื้อเลย</button>
+  </footer>
+
+  <div class="modal-overlay" id="buyNowModal">
+    <div class="modal-content">
+      <i class="fas fa-times close-btn" id="closeModalBtn"></i>
+      <div class="modal-header">
+        <img src="brush_photo.jpg" alt="M-BLITHE Foundation Brush Thumbnail">
+        <div>
+          <div class="modal-header-title">M-BLITHE แปรงรองพื้น</div>
+          <div class="modal-header-price">฿199</div>
+        </div>
+      </div>
+      <form id="orderForm" onsubmit="sendOrderToSheet(event);" autocomplete="off">
+        <input type="hidden" name="product" id="productInput" value="แปรงรองพื้น M-BLITHE - 199 บาท" required>
+        <label for="name">ชื่อ-นามสกุล</label>
+        <input type="text" id="name" name="name" required placeholder="กรอกชื่อ-นามสกุล">
+        <label for="phone">เบอร์โทรศัพท์</label>
+        <input type="text" id="phone" name="phone" required placeholder="ตัวอย่าง: 0812345678" pattern="^[0-9]{10}$" title="กรอกเบอร์โทรศัพท์ 10 หลัก">
+        <label for="address">ที่อยู่จัดส่ง</label>
+        <textarea id="address" name="address" rows="3" required placeholder="บ้านเลขที่, ถนน, ตำบล, อำเภอ, จังหวัด, รหัสไปรษณีย์"></textarea>
+        <button type="submit" class="modal-submit-btn" id="submitBtn">ยืนยันสั่งซื้อ</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="successPopup">
+    <i class="fas fa-check-circle"></i>
+    <p>สั่งซื้อสำเร็จ!</p>
+    <span style="color:#222;font-weight:400;display:block;margin-top:7px;">เจ้าหน้าที่จะติดต่อกลับเพื่อยืนยันออเดอร์</span>
+  </div>
+
+  <script>
+    const GOOGLE_SHEET_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbxvkT44c1V26IyzQW_4FhR4iQ0gmrNvdhF5TnneqNZ-21JXFczyZBo-8EFzhA69WshT/exec';
+
+    // TikTok ViewContent (โหลดหน้า)
+    if (window.ttq) ttq.track('ViewContent');
+
+    // Modal variables
+    const buyNowModal = document.getElementById('buyNowModal');
+    const closeModalBtn = document.getElementById('closeModalBtn');
+    const buyNowBtn = document.getElementById('buyNowBtn');
+
+    // Modal control
+    function openModal() { 
+      buyNowModal.style.display = 'flex';
+      trackInitiateCheckout();
     }
-    formData.set("order_id", 'ORD-' + Date.now());
-    fetch(GOOGLE_SHEET_WEB_APP_URL, {
-      method: "POST", body: formData
-    })
-    .then(response => response.json())
-    .then(data => {
-      submitButton.disabled = false;
-      submitButton.textContent = originalButtonText;
-      if (data.result === 'success') {
-        if(window.fbq) fbq('track', 'Purchase', {value: 199.00, currency: 'THB'});
-        if(window.ttq) ttq.track('CompletePayment', {
-          contents: [{content_id:'MB-BRUSH',content_type:'product',quantity:1}],
-          value: 199.00,
-          currency: 'THB'
-        });
-        if(window.gtag) {
-          gtag('event', 'conversion', {
-            'send_to': 'AW-17035064059/53zPCNHE2OIaEPvl-bo_',
-            'value': 199.00,
-            'currency': 'THB'
-          });
-        }
-        closeModal();
-        orderForm.reset();
-        const successPopup = document.getElementById('successPopup');
-        successPopup.style.display = 'block';
-        setTimeout(() => { successPopup.style.display = 'none'; }, 2800);
-      } else {
-        alert('เกิดข้อผิดพลาด: ' + (data.message || 'ไม่ทราบสาเหตุ'));
-      }
-    })
-    .catch(err => {
-      submitButton.disabled = false;
-      submitButton.textContent = originalButtonText;
-      alert("เกิดข้อผิดพลาดในการส่งข้อมูล: " + err.message);
-      console.error("Fetch Error:", err);
+    function closeModal() { buyNowModal.style.display = 'none'; }
+    buyNowBtn.addEventListener('click', openModal);
+    closeModalBtn.addEventListener('click', closeModal);
+    buyNowModal.addEventListener('click', (event) => {
+      if (event.target === buyNowModal) { closeModal(); }
     });
-  }
-</script>
+
+    // LINE Button Tracking (Header + Footer)
+    function lineTrackingHandler() {
+      if(window.fbq) fbq('track', 'Contact');
+      if(window.ttq) ttq.track('Contact');
+    }
+    document.querySelectorAll('#addLineBtn, #addLineBtnFooter').forEach(el => {
+      if(el) el.addEventListener('click', lineTrackingHandler);
+    });
+
+    // InitiateCheckout Tracking
+    function trackInitiateCheckout() {
+      if(window.fbq) fbq('track', 'InitiateCheckout');
+      if(window.ttq) ttq.track('InitiateCheckout');
+    }
+
+    // Form submit
+    function sendOrderToSheet(event) {
+      event.preventDefault();
+      const orderForm = document.getElementById('orderForm');
+      const submitButton = document.getElementById('submitBtn');
+      const originalButtonText = submitButton.textContent;
+      submitButton.disabled = true;
+      submitButton.textContent = 'กำลังส่งข้อมูล...';
+      const formData = new FormData(orderForm);
+      const phoneField = orderForm.querySelector('#phone');
+      if (phoneField && phoneField.value && !phoneField.value.startsWith("'")) {
+        formData.set('phone', "'" + phoneField.value);
+      }
+      formData.set("order_id", 'ORD-' + Date.now());
+      fetch(GOOGLE_SHEET_WEB_APP_URL, {
+        method: "POST", body: formData
+      })
+      .then(response => response.json())
+      .then(data => {
+        submitButton.disabled = false;
+        submitButton.textContent = originalButtonText;
+        if (data.result === 'success') {
+          // --- PIXEL: PURCHASE EVENT ---
+          if(window.fbq) fbq('track', 'Purchase', {value: 199.00, currency: 'THB'});
+          if(window.ttq) ttq.track('CompletePayment', {
+            contents: [{content_id:'MB-BRUSH',content_type:'product',quantity:1}],
+            value: 199.00,
+            currency: 'THB'
+          });
+          if(window.gtag) {
+            gtag('event', 'conversion', {
+              'send_to': 'AW-17035064059/53zPCNHE2OIaEPvl-bo_',
+              'value': 199.00,
+              'currency': 'THB'
+            });
+          }
+          closeModal();
+          orderForm.reset();
+          const successPopup = document.getElementById('successPopup');
+          successPopup.style.display = 'block';
+          setTimeout(() => { successPopup.style.display = 'none'; }, 2800);
+        } else {
+          alert('เกิดข้อผิดพลาด: ' + (data.message || 'ไม่ทราบสาเหตุ'));
+        }
+      })
+      .catch(err => {
+        submitButton.disabled = false;
+        submitButton.textContent = originalButtonText;
+        alert("เกิดข้อผิดพลาดในการส่งข้อมูล: " + err.message);
+        console.error("Fetch Error:", err);
+      });
+    }
+  </script>
 </body>
 </html>
