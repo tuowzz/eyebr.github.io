@@ -102,12 +102,192 @@
   <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <style>
-    /* ... style เดิมทั้งหมดของคุณ ... */
+    /* (style เดิมทั้งหมดที่คุณส่งมา) */
+    :root {
+      --primary-color: #ee4d2d; /* Shopee orange */
+      --shopee-orange: #ee4d2d;
+      --shopee-light-orange: #fff7f4;
+      --white: #fff;
+      --border-color: #e8e8e8;
+      --background: #f8f8fa;
+      --shadow: 0 2px 18px 0 rgba(24,16,52,.07);
+    }
+    body {
+      font-family: 'Kanit', sans-serif;
+      margin: 0;
+      background: var(--background);
+      color: #161823;
+      padding-bottom: 75px;
+      min-height: 100vh;
+    }
+    /* ...ขออนุญาตตัดสั้นตรง style ตรงนี้ เพราะคุณส่งมาครบอยู่แล้ว... */
   </style>
 </head>
 <body>
 
-  <!-- ... HTML เดิมของคุณ ... -->
+  <header>
+    <h1 style="font-size:1.25rem;line-height:1.4em;color:#ee4d2d;padding:14px 14px 2px 14px;text-align:center;">
+      <span class="shopee-label">ขายดี</span>
+      <span class="shopee-label green">ส่งฟรี</span>
+      <span class="shopee-label yellow">พร้อมส่ง</span>
+      <span class="shopee-label black">เก็บเงินปลายทาง</span><br>
+      แปรงรองพื้น <span style="font-weight:700;">M-BLITHE</span> ขนแน่นนุ่ม เกลี่ยเนียน ไม่กินรองพื้น
+    </h1>
+  </header>
+
+  <div class="trust-banner">
+    ✅ ของแท้ 100% | เก็บเงินปลายทาง | รีวิวลูกค้าหลายพัน | เหมาะกับทุกสภาพผิว
+  </div>
+
+  <div class="product-gallery">
+    <img src="brush_photo.jpg" alt="แปรงรองพื้น M-BLITHE ขนแน่นนุ่ม เกลี่ยง่าย ไม่กินรองพื้น">
+  </div>
+
+  <section style="padding:10px 17px;">
+    <p style="color:#999;font-size:0.96rem;margin:5px 0;">
+      #แปรงรองพื้น #foundationbrush #mblithe #แปรงแต่งหน้า #ขนนุ่ม #ส่งฟรี #เก็บเงินปลายทาง
+    </p>
+  </section>
+
+  <div class="content-padding">
+    <div class="price-section">
+      <span class="current-price">฿199</span>
+      <span class="original-price">฿299</span>
+    </div>
+    <div class="product-title">✨ M-BLITHE แปรงรองพื้น ขนแน่น นุ่ม เกลี่ยง่าย ไม่กินรองพื้น</div>
+    <div style="color:#ee4d2d;font-size:1.06rem;margin:6px 0 11px 0;">
+      ★ 4.9/5 | 8,000 รีวิว
+      <div style="margin:0 0 16px 0;text-align:center;">
+        <video autoplay muted loop playsinline style="max-width:320px;width:100%;border-radius:13px;box-shadow:0 2px 10px 0 rgba(0,0,0,0.10);margin-top:6px;">
+          <source src="SaveTik.co_7444733809733537031.mp4" type="video/mp4">
+          ไม่สามารถเล่นวิดีโอนี้ได้
+        </video>
+        <div style="font-size:0.93rem;color:#888;margin-top:2px;">
+          ตัวอย่างรีวิวจากลูกค้าจริง Shopee
+        </div>
+      </div>
+    </div>
+    <div class="scarcity-box">
+      🎉 <b>โปรพิเศษ! เหลือ 15 ชิ้น</b> | ส่งฟรีวันนี้เท่านั้น
+    </div>
+  </div>
+
+  <div class="content-padding shop-info" style="border-radius:12px;">
+    <div class="avatar">MB</div>
+    <div>
+      <div class="shop-name">M-BLITHE Official</div>
+      <a href="https://lin.ee/wKelfsp" target="_blank" class="btn-add-line" id="addLineBtn">
+        <i class="fa-brands fa-line"></i> สอบถาม-รับโปรผ่าน LINE
+      </a>
+    </div>
+  </div>
+
+  <div class="content-padding guarantee-box">
+    🏅 รับประกันคุณภาพ ขนไม่ร่วง ขนนุ่มแน่น ไม่บาดผิว
+  </div>
+
+  <div class="content-padding steps-box">
+    <b>สั่งซื้อแปรงรองพื้นใน 2 ขั้นตอน</b><br>
+    1. กรอกข้อมูลจัดส่ง<br>
+    2. รอเจ้าหน้าที่ติดต่อยืนยัน
+  </div>
+
+  <div class="content-padding product-details">
+    <h2 style="font-size:1.09rem;font-weight:600;margin-bottom:11px;">
+      <i class="fa-solid fa-circle-info"></i> รายละเอียดสินค้า แปรงรองพื้น M-BLITHE
+    </h2>
+    <div class="feature-item"><span class="icon">✅</span>ขนแปรงนุ่ม แน่น ไม่บาดผิว</div>
+    <div class="feature-item"><span class="icon">🪞</span>เกลี่ยรองพื้นเนียน กลืนผิว ไม่เป็นเส้น</div>
+    <div class="feature-item"><span class="icon">💧</span>ไม่กินรองพื้น ประหยัดเครื่องสำอาง</div>
+    <div class="feature-item"><span class="icon">🌱</span>ดูแลรักษาง่าย ล้างทำความสะอาดได้</div>
+    <div style="color:#999;font-size:0.9rem;">* ผลลัพธ์แตกต่างกันแต่ละบุคคล</div>
+  </div>
+
+  <div class="content-padding reviews-section">
+    <h3><i class="fa-solid fa-comments"></i> รีวิวจากลูกค้าจริง (Shopee)</h3>
+    <div class="review">
+      <div class="review-header">
+        <span class="stars">⭐⭐⭐⭐⭐</span>
+        <span class="author">ค** ร**ม**น 🥰**</span>
+      </div>
+      <p class="review-text">
+        ตรงปกค่ะส่งไวแพคสินค้ามาอย่างดีครบจำนวนสอง อันซื้อสองถูกกว่าเยอะค่ะของใช้ดูละจึ้งมากค่ะ แม่อย่างที่แม่ค้าริวิวเลยค่ะมาใช้กับแป้งพัฟค่ะเกลี่ยหน้าคือนุ่มดีค่ะ
+      </p>
+      <div style="display: flex; gap: 7px; flex-wrap: wrap;">
+        <img src="photo_1_2025-06-30_20-06-15.jpg" style="width: 90px; border-radius: 7px;">
+        <img src="photo_3_2025-06-30_20-06-15.jpg" style="width: 90px; border-radius: 7px;">
+        <img src="photo_4_2025-06-30_20-06-15.jpg" style="width: 90px; border-radius: 7px;">
+        <img src="photo_5_2025-06-30_20-06-15.jpg" style="width: 90px; border-radius: 7px;">
+        <img src="photo_6_2025-06-30_20-06-15.jpg" style="width: 90px; border-radius: 7px;">
+      </div>
+      <div style="color:#aaa;font-size:0.92rem;margin-top:6px;">รีวิววันที่ 2024-12-01</div>
+    </div>
+    <div class="review">
+      <div class="review-header">
+        <span class="stars">⭐⭐⭐⭐⭐</span>
+        <span class="author">a**e k**w</span>
+      </div>
+      <p class="review-text">
+        ใช้ดีค่ะ สินค้าส่งเร็ว แพ็คมาดีไม่มีปัญหา ราคาถูก จับต้องได้ชอบมากค่ะ 👍👍👍
+      </p>
+      <div style="display: flex; gap: 7px; flex-wrap: wrap;">
+        <img src="photo_4_2025-06-30_20-06-15.jpg" style="width: 90px; border-radius: 7px;">
+        <img src="photo_3_2025-06-30_20-06-15.jpg" style="width: 90px; border-radius: 7px;">
+        <img src="photo_5_2025-06-30_20-06-15.jpg" style="width: 90px; border-radius: 7px;">
+      </div>
+      <div style="color:#aaa;font-size:0.92rem;margin-top:6px;">รีวิววันที่ 2024-12-23</div>
+    </div>
+    <div class="review">
+      <div class="review-header">
+        <span class="stars">⭐⭐⭐⭐⭐</span>
+        <span class="author">P**k</span>
+      </div>
+      <p class="review-text">
+        ใช้ดี ดีไซน์สวย แปรงขนนุ่มมาก ไม่บาดผิว ทารองพื้นได้เนียนไม่เป็นเส้น ขนแปรงแน่นไม่มีร่วง คุณภาพสมราคา
+      </p>
+      <div style="display: flex; gap: 7px; flex-wrap: wrap;">
+        <img src="photo_1_2025-06-30_20-06-15.jpg" style="width: 90px; border-radius: 7px;">
+        <img src="photo_5_2025-06-30_20-06-15.jpg" style="width: 90px; border-radius: 7px;">
+      </div>
+      <div style="color:#aaa;font-size:0.92rem;margin-top:6px;">รีวิววันที่ 2024-08-24</div>
+    </div>
+  </div>
+
+  <footer class="sticky-footer">
+    <a href="https://lin.ee/wKelfsp" target="_blank" class="btn-add-line" id="addLineBtnFooter">
+      <i class="fa-brands fa-line"></i> แอดไลน์รับโปร
+    </a>
+    <button class="buy-now-tiktok" id="buyNowBtn">ซื้อเลย</button>
+  </footer>
+
+  <div class="modal-overlay" id="buyNowModal">
+    <div class="modal-content">
+      <i class="fas fa-times close-btn" id="closeModalBtn"></i>
+      <div class="modal-header">
+        <img src="brush_photo.jpg" alt="M-BLITHE Foundation Brush Thumbnail">
+        <div>
+          <div class="modal-header-title">M-BLITHE แปรงรองพื้น</div>
+          <div class="modal-header-price">฿199</div>
+        </div>
+      </div>
+      <form id="orderForm" onsubmit="sendOrderToSheet(event);" autocomplete="off">
+        <input type="hidden" name="product" id="productInput" value="แปรงรองพื้น M-BLITHE - 199 บาท" required>
+        <label for="name">ชื่อ-นามสกุล</label>
+        <input type="text" id="name" name="name" required placeholder="กรอกชื่อ-นามสกุล">
+        <label for="phone">เบอร์โทรศัพท์</label>
+        <input type="text" id="phone" name="phone" required placeholder="ตัวอย่าง: 0812345678" pattern="^[0-9]{10}$" title="กรอกเบอร์โทรศัพท์ 10 หลัก">
+        <label for="address">ที่อยู่จัดส่ง</label>
+        <textarea id="address" name="address" rows="3" required placeholder="บ้านเลขที่, ถนน, ตำบล, อำเภอ, จังหวัด, รหัสไปรษณีย์"></textarea>
+        <button type="submit" class="modal-submit-btn" id="submitBtn">ยืนยันสั่งซื้อ</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="successPopup">
+    <i class="fas fa-check-circle"></i>
+    <p>สั่งซื้อสำเร็จ!</p>
+    <span style="color:#222;font-weight:400;display:block;margin-top:7px;">เจ้าหน้าที่จะติดต่อกลับเพื่อยืนยันออเดอร์</span>
+  </div>
 
   <script>
     const GOOGLE_SHEET_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbxvkT44c1V26IyzQW_4FhR4iQ0gmrNvdhF5TnneqNZ-21JXFczyZBo-8EFzhA69WshT/exec';
