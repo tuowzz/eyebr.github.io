@@ -514,5 +514,27 @@
       });
     }
   </script>
+  <script>
+  // เมื่อกดปุ่มเลือกเฉดสี
+  document.querySelectorAll('.shade-btn-group .shade-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      // ลบ active ออกทุกปุ่ม
+      document.querySelectorAll('.shade-btn').forEach(b => b.classList.remove('selected'));
+      // ใส่ active ที่ปุ่มที่ถูกกด
+      btn.classList.add('selected');
+      // ส่งค่าไป input hidden
+      document.getElementById('shadeInput').value = btn.dataset.value;
+    });
+  });
+
+  // กัน submit ถ้ายังไม่เลือกสี
+  document.getElementById('orderForm').addEventListener('submit', function(e){
+    if(!document.getElementById('shadeInput').value) {
+      alert('กรุณาเลือกเฉดสีก่อนค่ะ');
+      e.preventDefault();
+      return false;
+    }
+  });
+</script>
 </body>
 </html>
