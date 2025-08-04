@@ -392,27 +392,33 @@
       </div>
     </div>
     <form id="orderForm" onsubmit="sendOrderToSheet(event);" autocomplete="off">
-      <input type="hidden" name="product" id="productInput" value="ดินสอเขียนคิ้ว 119 บาท" required>
+  <input type="hidden" name="product" id="productInput" value="ดินสอเขียนคิ้ว 119 บาท" required>
 
-      <label style="margin-top:13px;font-weight:600;">เลือกเฉดสี</label>
-      <div class="shade-btn-group" id="shadeBtnGroup">
-        <button type="button" class="shade-btn" data-value="LB-Brown">LB-Brown (สีน้ำตาลอ่อน - ธรรมชาติ)</button>
-        <button type="button" class="shade-btn" data-value="Grey">Grey (สีเทา - เหมาะกับผมดำ)</button>
-      </div>
-      <input type="hidden" name="shade" id="shadeInput" required>
-      <input type="hidden" name="price" value="119">
+  <label style="margin-top:13px;font-weight:600;">เลือกเฉดสี</label>
+  <div style="display:flex;gap:18px;margin:7px 0 13px 0;">
+    <label style="display:flex;align-items:center;gap:7px;cursor:pointer;">
+      <input type="radio" name="shade" value="LB-Brown" required>
+      <span>LB-Brown (สีน้ำตาลอ่อน - ธรรมชาติ)</span>
+    </label>
+    <label style="display:flex;align-items:center;gap:7px;cursor:pointer;">
+      <input type="radio" name="shade" value="Grey" required>
+      <span>Grey (สีเทา - เหมาะกับผมดำ)</span>
+    </label>
+  </div>
+  <input type="hidden" name="price" value="119">
 
-      <label for="name">ชื่อ-นามสกุล</label>
-      <input type="text" id="name" name="name" required placeholder="กรอกชื่อ-นามสกุล">
+  <label for="name">ชื่อ-นามสกุล</label>
+  <input type="text" id="name" name="name" required placeholder="กรอกชื่อ-นามสกุล">
 
-      <label for="phone">เบอร์โทรศัพท์</label>
-      <input type="text" id="phone" name="phone" required placeholder="ตัวอย่าง: 0812345678" pattern="^[0-9]{10}$" title="กรอกเบอร์โทรศัพท์ 10 หลัก">
+  <label for="phone">เบอร์โทรศัพท์</label>
+  <input type="text" id="phone" name="phone" required placeholder="ตัวอย่าง: 0812345678" pattern="^[0-9]{10}$" title="กรอกเบอร์โทรศัพท์ 10 หลัก">
 
-      <label for="address">ที่อยู่จัดส่ง</label>
-      <textarea id="address" name="address" rows="3" required placeholder="บ้านเลขที่, ถนน, ตำบล, อำเภอ, จังหวัด, รหัสไปรษณีย์"></textarea>
+  <label for="address">ที่อยู่จัดส่ง</label>
+  <textarea id="address" name="address" rows="3" required placeholder="บ้านเลขที่, ถนน, ตำบล, อำเภอ, จังหวัด, รหัสไปรษณีย์"></textarea>
 
-      <button type="submit" class="modal-submit-btn" id="submitBtn">ยืนยันสั่งซื้อ</button>
-    </form>
+  <button type="submit" class="modal-submit-btn" id="submitBtn">ยืนยันสั่งซื้อ</button>
+</form>
+
   </div>
 </div>
 
