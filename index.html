@@ -391,19 +391,17 @@
         <div class="modal-header-price">฿119</div>
       </div>
     </div>
-  <form id="orderForm" onsubmit="sendOrderToSheet(event);" autocomplete="off">
+ <form id="orderForm" onsubmit="sendOrderToSheet(event);" autocomplete="off">
   <input type="hidden" name="product" id="productInput" required value="">
 
   <label style="margin-top:13px;font-weight:600;">เลือกเฉดสี</label>
-  <div style="display:flex;gap:18px;margin:7px 0 13px 0;">
-    <label style="display:flex;align-items:center;gap:7px;cursor:pointer;">
-      <input type="radio" name="shade" value="LB-Brown (สีน้ำตาลอ่อน - ธรรมชาติ)" required>
-      <span>LB-Brown (สีน้ำตาลอ่อน - ธรรมชาติ)</span>
-    </label>
-    <label style="display:flex;align-items:center;gap:7px;cursor:pointer;">
-      <input type="radio" name="shade" value="Grey (สีเทา - เหมาะกับผมดำ)" required>
-      <span>Grey (สีเทา - เหมาะกับผมดำ)</span>
-    </label>
+  <div class="shade-btn-group" id="shadeBtnGroup" style="display:flex;gap:18px;margin:7px 0 13px 0;">
+    <button type="button" class="shade-btn" data-label="ดินสอเขียนคิ้ว (LB-Brown (สีน้ำตาลอ่อน - ธรรมชาติ)) - 119 บาท">
+      LB-Brown (สีน้ำตาลอ่อน - ธรรมชาติ)
+    </button>
+    <button type="button" class="shade-btn" data-label="ดินสอเขียนคิ้ว (Grey (สีเทา - เหมาะกับผมดำ)) - 119 บาท">
+      Grey (สีเทา - เหมาะกับผมดำ)
+    </button>
   </div>
 
   <label for="name">ชื่อ-นามสกุล</label>
@@ -417,6 +415,7 @@
 
   <button type="submit" class="modal-submit-btn" id="submitBtn">ยืนยันสั่งซื้อ</button>
 </form>
+
 
 
   </div>
@@ -520,14 +519,25 @@
     }
   </script>
 <script>
-  // ทุกครั้งที่เลือกสี จะ set productInput อัตโนมัติ
-  document.querySelectorAll('input[name="shade"]').forEach(function(radio) {
-    radio.addEventListener('change', function() {
-      document.getElementById('productInput').value =
-        "ดินสอเขียนคิ้ว (" + this.value + ") - 119 บาท";
+  // กดเลือกปุ่มสี จะ active และใส่ค่า product
+  document.querySelectorAll('.shade-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      document.querySelectorAll('.shade-btn').forEach(b => b.classList.remove('selected'));
+      btn.classList.add('selected');
+      document.getElementById('productInput').value = btn.dataset.label;
     });
   });
+
+  // ถ้ายังไม่เลือกสี กด submit จะฟ้อง
+  document.getElementById('orderForm').addEventListener('submit', function(e){
+    if(!document.getElementById('productInput').value) {
+      alert('กรุณาเลือกเฉดสีก่อนค่ะ');
+      e.preventDefault();
+      return false;
+    }
+  });
 </script>
+
 
 </body>
 </html>
