@@ -356,34 +356,34 @@
     <button class="buy-now-tiktok" id="buyNowBtn">ซื้อเลย</button>
   </footer>
 
-  <div class="modal-overlay" id="buyNowModal">
-    <div class="modal-content">
-      <i class="fas fa-times close-btn" id="closeModalBtn"></i>
-      <div class="modal-header">
-        <img src="90bea738604c407ba19577419b0dce9c~tplv-o3syd03w52-origin-jpeg.jpeg" alt="BROW Pencil Thumbnail">
-        <div>
-          <div class="modal-header-title">ดินสอเขียนคิ้ว 2 สี Brown/Grey</div>
-          <div class="modal-header-price">฿119</div>
-        </div>
-      </div>
-      <form id="orderForm" onsubmit="sendOrderToSheet(event);" autocomplete="off">
-        <input type="hidden" name="product" id="productInput" value="ดินสอเขียนคิ้ว 119 บาท" required>
-        <label for="shade">เลือกเฉดสี</label>
-        <select id="shade" name="shade" required>
-          <option value="" disabled selected>-- เลือกเฉดสี --</option>
-          <option value="LB-Brown">LB-Brown (สีน้ำตาลอ่อน - ธรรมชาติ)</option>
-          <option value="Grey">Grey (สีเทา - เหมาะกับผมดำ)</option>
-        </select>
-        <label for="name">ชื่อ-นามสกุล</label>
-        <input type="text" id="name" name="name" required placeholder="กรอกชื่อ-นามสกุล">
-        <label for="phone">เบอร์โทรศัพท์</label>
-        <input type="text" id="phone" name="phone" required placeholder="ตัวอย่าง: 0812345678" pattern="^[0-9]{10}$" title="กรอกเบอร์โทรศัพท์ 10 หลัก">
-        <label for="address">ที่อยู่จัดส่ง</label>
-        <textarea id="address" name="address" rows="3" required placeholder="บ้านเลขที่, ถนน, ตำบล, อำเภอ, จังหวัด, รหัสไปรษณีย์"></textarea>
-        <button type="submit" class="modal-submit-btn" id="submitBtn">ยืนยันสั่งซื้อ</button>
-      </form>
-    </div>
+ <form id="orderForm" onsubmit="sendOrderToSheet(event);" autocomplete="off">
+  <input type="hidden" name="product" id="productInput" value="ดินสอเขียนคิ้ว 119 บาท" required>
+  
+  <label style="margin-top:13px;font-weight:600;">เลือกเฉดสี</label>
+  <div style="display:flex;gap:18px;margin:7px 0 13px 0;">
+    <label style="display:flex;align-items:center;gap:7px;cursor:pointer;">
+      <input type="radio" name="shade" value="LB-Brown" required>
+      <span>LB-Brown (สีน้ำตาลอ่อน - ธรรมชาติ)</span>
+    </label>
+    <label style="display:flex;align-items:center;gap:7px;cursor:pointer;">
+      <input type="radio" name="shade" value="Grey" required>
+      <span>Grey (สีเทา - เหมาะกับผมดำ)</span>
+    </label>
   </div>
+  <input type="hidden" name="price" value="119">
+
+  <label for="name">ชื่อ-นามสกุล</label>
+  <input type="text" id="name" name="name" required placeholder="กรอกชื่อ-นามสกุล">
+
+  <label for="phone">เบอร์โทรศัพท์</label>
+  <input type="text" id="phone" name="phone" required placeholder="ตัวอย่าง: 0812345678" pattern="^[0-9]{10}$" title="กรอกเบอร์โทรศัพท์ 10 หลัก">
+
+  <label for="address">ที่อยู่จัดส่ง</label>
+  <textarea id="address" name="address" rows="3" required placeholder="บ้านเลขที่, ถนน, ตำบล, อำเภอ, จังหวัด, รหัสไปรษณีย์"></textarea>
+
+  <button type="submit" class="modal-submit-btn" id="submitBtn">ยืนยันสั่งซื้อ</button>
+</form>
+
 
   <div id="successPopup">
     <i class="fas fa-check-circle"></i>
